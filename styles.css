@@ -21,7 +21,15 @@ h1 {
 }
 
 .mole {
-  background-color: red;
+  background-image: url(images/mole.jpg);
+  background-size: cover;
+  background-color: rgb(176, 129, 0);
+}
+
+.wrong {
+  background-image: url(images/x.jpg);
+  background-size: cover;
+  background-color: #ff0000;
 }
 
 #content {

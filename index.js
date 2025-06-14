@@ -12,8 +12,17 @@ $(".box").click(function() {
     $("#score").html(`<b>Score:</b> ${score}`);
     $("#high-score").html(`<b>High score:</b> ${highScore}`);
 
-    const audio = new Audio("whack.mp3");
+    const audio = new Audio("sounds/whack.mp3");
     audio.play();
+  } else {
+    score--;
+    $("#score").html(`<b>Score:</b> ${score}`);
+
+    const audio = new Audio("sounds/wrong.mp3");
+    audio.play();
+
+    this.classList.add("wrong");
+    setTimeout(() => { this.classList.remove("wrong") }, 1000);
   }
 });
 
