@@ -13,7 +13,7 @@ h1 {
 }
 
 .box {
-  background-color: white;
+  background-color: #fff;
   border: 3px solid #000;
   width: 150px;
   height: 150px;
@@ -25,6 +25,7 @@ h1 {
 
 #content {
   display: grid;
+  gap: 10px;
   grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
 }
 
@@ -40,4 +41,20 @@ h1 {
   top: 0;
   right: 10px;
   margin-top: 5px;
+}
+
+#start-button {
+  color: #fff;
+  background-color: #0fb000;
+  padding: 20px;
+  border: none;
+  border-radius: 30px;
+  font: 2rem "Open Sans", sans-serif;
+  transition: 0.3s;
+}
+
+#start-button:hover {
+  background-color: #13e300;
+  /* box-shadow: 0 0 20px #13e300; */
+  filter: drop-shadow(0 0 20px #13e300);
 }
