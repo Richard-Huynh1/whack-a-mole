@@ -4,6 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
 }
 
@@ -51,6 +52,7 @@ h1 {
   border-radius: 30px;
   font: 2rem "Open Sans", sans-serif;
   transition: 0.3s;
+  margin-top: 20px;
 }
 
 #start-button:hover {
