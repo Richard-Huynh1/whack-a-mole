@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  background-color: #27a4da;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: white;
+  font: 2rem "Open Sans", sans-serif;
+}
+
+.box {
+  background-color: white;
+  border: 3px solid #000;
+  width: 150px;
+  height: 150px;
+}
+
+.mole {
+  background-color: red;
+}
+
+#content {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+}
+
+#high-score {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  margin-top: 5px;
+}
+
+#score {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  margin-top: 5px;
+}
